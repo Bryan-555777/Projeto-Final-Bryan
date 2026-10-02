@@ -3,9 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Portfólio Pessoal</title>
+
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <!-- Cabeçalho & Navegação -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">&lt;Dev/&gt;</a>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Alternar Tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="btn-icon mobile-only" aria-label="Abrir Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Principal / Apresentação -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">Disponível para novos projetos</span>
+                <h1>Olá, eu sou <span class="highlight">Seu Nome</span> 👋</h1>
+                <h2>Desenvolvedor Full Stack</h2>
+                <p>Crio soluções web modernas, responsivas e focadas em excelente experiência do usuário.</p>
+
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:seuemail@exemplo.com" aria-label="E-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80" alt="Foto de Perfil">
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="section">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Sou um desenvolvedor apaixonado por tecnologia e resolução de problemas. Tenho experiência no desenvolvimento de aplicações web do zero, desde a concepção do layout até a integração do banco de dados.</p>
+                    <p>Busco constantemente aprender novas ferramentas, aprimorar minhas boas práticas de código e contribuir para projetos desafiadores.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>+2</h3>
+                        <p>Anos de Experiência</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>+15</h3>
+                        <p>Projetos Criados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="section">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-node-js"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="section">
+            <h2 class="section-title">Projetos Destacados</h2>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80" alt="Projeto 1">
+                    <div class="project-info">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>Painel administrativo para controle de vendas, estoque e métricas de desempenho.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop&q=80" alt="Projeto 2">
+                    <div class="project-info">
+                        <h3>Aplicativo de Tarefas</h3>
+                        <p>Aplicação interativa para gerenciamento de tarefas diárias com persistência de dados local.</p>
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Vinculação do arquivo JavaScript externo -->
+    <script src="/js/script.js"></script>
 </body>
 </html>
